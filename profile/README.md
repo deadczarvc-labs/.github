@@ -12,8 +12,8 @@
 
 | Project | What it does | Latest |
 |---|---|---|
-| [jev-factkeep-compaction](https://github.com/deadczarvc-labs/jev-factkeep-compaction) | Claude Code plugin. Jev-guided context compaction that never erases a tool call: reproducible reads shrink to a note, observations keep their errors, ids, codes and counts. A fork of [tamaratran/fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction). | [0.3.0-astra.10](https://github.com/deadczarvc-labs/jev-factkeep-compaction/releases/latest) |
-| [hermes-jev-compaction](https://github.com/deadczarvc/hermes-jev-compaction) | The same rules as a context engine for [Hermes Agent](https://github.com/NousResearch/hermes-agent). | [v0.6.0](https://github.com/deadczarvc/hermes-jev-compaction/releases/latest) |
+| [jev-factkeep-compaction](https://github.com/deadczarvc-labs/jev-factkeep-compaction) | Claude Code plugin. Jev-guided context compaction that never erases a tool call: reproducible reads shrink to a note, observations keep their errors, ids, codes and counts. A fork of [tamaratran/fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction). | [0.3.0-astra.12](https://github.com/deadczarvc-labs/jev-factkeep-compaction/releases/latest) |
+| [hermes-jev-compaction](https://github.com/deadczarvc/hermes-jev-compaction) | The same rules as a context engine for [Hermes Agent](https://github.com/NousResearch/hermes-agent). | [v0.7.1](https://github.com/deadczarvc/hermes-jev-compaction/releases/latest) |
 
 On blind held-out rounds the compaction rules kept 304 of 336 preregistered facts, against 36 for the original
 engine. The analysis, with per-call data and a script that recomputes every number:
