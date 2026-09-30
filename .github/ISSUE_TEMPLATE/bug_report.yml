@@ -1,0 +1,44 @@
+name: Bug report
+description: Something does not work as documented.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Please remove secrets, tokens and personal paths from anything you paste.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Release or commit you are running.
+      placeholder: 0.3.0-astra.6
+    validations:
+      required: true
+  - type: input
+    id: host
+    attributes:
+      label: Host tool and version
+      description: For example Claude Code 2.1.274, or Hermes Agent and its version.
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: The smallest input or transcript excerpt that shows the problem.
+      render: text
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Output, stats or logs
+      description: For compaction problems, the `stats` object and the toast text help most.
+      render: text
