@@ -11,14 +11,14 @@ body:
     attributes:
       label: Version
       description: Release or commit you are running.
-      placeholder: 0.3.0-astra.6
+      placeholder: 0.3.0-astra.23
     validations:
       required: true
   - type: input
     id: host
     attributes:
       label: Host tool and version
-      description: For example Claude Code 2.1.274, or Hermes Agent and its version.
+      description: For example Claude Code 2.1.284, or Hermes Agent and its version.
     validations:
       required: true
   - type: textarea

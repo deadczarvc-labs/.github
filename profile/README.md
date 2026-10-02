@@ -12,8 +12,9 @@
 
 | Project | What it does | Latest |
 |---|---|---|
-| [jev-factkeep-compaction](https://github.com/deadczarvc-labs/jev-factkeep-compaction) | Claude Code plugin, plus a Codex hook. Jev-guided context compaction that never erases a tool call: reproducible reads shrink to a note, observations keep their errors, ids, codes and counts; after a Codex compaction, a fact sheet brings them back. A fork of [tamaratran/fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction). | [0.3.0-astra.18](https://github.com/deadczarvc-labs/jev-factkeep-compaction/releases/latest) |
-| [hermes-jev-compaction](https://github.com/deadczarvc/hermes-jev-compaction) | The same rules as a context engine for [Hermes Agent](https://github.com/NousResearch/hermes-agent). | [v0.8.1](https://github.com/deadczarvc/hermes-jev-compaction/releases/latest) |
+| [jev-factkeep-compaction](https://github.com/deadczarvc-labs/jev-factkeep-compaction) | Claude Code plugin, plus a Codex hook. Jev-guided context compaction that never erases a tool call: reproducible reads shrink to a note, observations keep their errors, ids, codes and counts; after a Codex compaction, a fact sheet brings them back. A fork of [tamaratran/fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction). | [0.3.0-astra.23](https://github.com/deadczarvc-labs/jev-factkeep-compaction/releases/latest) |
+| [hermes-jev-compaction](https://github.com/deadczarvc/hermes-jev-compaction) | The same rules as a context engine for [Hermes Agent](https://github.com/NousResearch/hermes-agent). | [v0.10.0](https://github.com/deadczarvc/hermes-jev-compaction/releases/latest) |
+| [jev-watch](https://github.com/deadczarvc-labs/jev-watch) | Claude Code plugin that logs what the compaction does (outcomes, TypeSafe requests, compactions, hook failures) to JSONL files. | 0.1.2 |
 
 On blind held-out rounds the compaction rules kept 304 of 336 preregistered facts, against 36 for the original
 engine. The analysis, with per-call data and a script that recomputes every number:
@@ -23,8 +24,8 @@ engine. The analysis, with per-call data and a script that recomputes every numb
 
 - **Claims come with data.** Measurements are preregistered before any run, repeated, and published with the tables
   and scripts needed to recompute them.
-- **Upstream first.** Fixes go back to the original project as pull requests, for example
-  [tamaratran/fast-jev-compaction#118](https://github.com/tamaratran/fast-jev-compaction/pull/118).
+- **Upstream when it is alive.** Fixes go back to a maintained original as pull requests; the original of these
+  forks has had no commits since 2026-09-18, so they are developed here.
 - **Forks stay compatible.** A fork keeps the upstream license, history and plugin names, so it can replace the
   original without reconfiguration.
 - **Known limits are stated.** Every release lists what it still loses.
