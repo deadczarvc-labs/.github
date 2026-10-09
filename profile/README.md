@@ -12,8 +12,8 @@
 
 | Project | What it does | Latest |
 |---|---|---|
-| [jev-factkeep-compaction](https://github.com/deadczarvc-labs/jev-factkeep-compaction) | Claude Code plugin, plus a Codex hook. Jev-guided context compaction that never erases a tool call: reproducible reads shrink to a note, observations keep their errors, ids, codes and counts; after a Codex compaction, a fact sheet brings them back. A fork of [tamaratran/fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction). | [0.3.0-astra.23](https://github.com/deadczarvc-labs/jev-factkeep-compaction/releases/latest) |
-| [hermes-jev-compaction](https://github.com/deadczarvc/hermes-jev-compaction) | The same rules as a context engine for [Hermes Agent](https://github.com/NousResearch/hermes-agent). | [v0.10.0](https://github.com/deadczarvc/hermes-jev-compaction/releases/latest) |
+| [jev-factkeep-compaction](https://github.com/deadczarvc-labs/jev-factkeep-compaction) | Claude Code plugin, plus a Codex hook. Jev-guided context compaction that never erases a tool call: reproducible reads shrink to a note, observations keep their errors, ids, codes and counts; after a Codex compaction, a fact sheet brings them back. A fork of [tamaratran/fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction). | [v0.3.0-astra.29](https://github.com/deadczarvc-labs/jev-factkeep-compaction/releases/latest) |
+| [hermes-jev-compaction](https://github.com/deadczarvc/hermes-jev-compaction) | The factkeep engine as a context engine for [Hermes Agent](https://github.com/NousResearch/hermes-agent): reproducible reads shrink to a note, observations keep errors, ids, codes and counts; deciders resolve through a provider registry (TypeSafe Jev, OpenAI `gpt-6-luna`). | [v0.90.0](https://github.com/deadczarvc/hermes-jev-compaction/releases/latest) |
 | [jev-watch](https://github.com/deadczarvc-labs/jev-watch) | Claude Code plugin that logs what the compaction does (outcomes, TypeSafe requests, compactions, hook failures) to JSONL files. | 0.1.2 |
 
 On blind held-out rounds the compaction rules kept 304 of 336 preregistered facts, against 36 for the original
